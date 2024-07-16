@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GET - The information is transfered in clear text format -->
+
+    <!-- POST - The information is transfered in encrypted format -->
+    
+    <h1>Forms in HTML</h1>
+    <form action="url" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="text/plain">
+        <label for="fname">First name</label>
+        <input type="text" placeholder="First name" value="" name="" id="fname">
+        
+        <br/><br/>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" name="" id="">
+        <input type="reset" value="reset">
+
+        <br/><br/>
+        <label for="">Enter your email</label>
+        <input type="email" name="" id="">
+
+        <input type="week" name="" id="">
+
+        <br/><br/>
+        <label for="select">Select Editor</label>
+        <select name="" id="">
+            <option value="Select">select</option>
+            <option value="vs code">vs code</option>
+            <option value="sublime">sublime</option>
+        </select>
+
+
+        <br/><br/>
+        <label for="">Select Editor</label>
+        <input list="editors" name="editor" placeholder="Select Editor">
+        <datalist id="editors">
+            <option value="vs code">vs code</option>
+            <option value="sublime">sublime</option>
+        </datalist>
+
+        <input type="hidden" name="">
+
+        <br/><br/>
+        <label for="">Range</label>
+        <input type="range" name="" id="" min="0" max="100">0 - 100
+        
+        <br/><br/>
+        <p>Select your gender</p>
+        <input type="radio" name="gender" id="male"> Male
+        <input type="radio" name="gender" id="female"> Female
+
+        <br/><br/>
+        <input type="checkbox" name="" id=""> I Agree terms and conditions
+
+        <br/><br/>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
